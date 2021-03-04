@@ -17,5 +17,6 @@ applications:
   - tracker-database
   env:
     WELCOME_MESSAGE: Hello from the my review environment
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: { stack_threads: 250 } }'
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: { stack_threads: 100 } }'
     MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: 'info,health,palTrackerFailure'
+    MANAGEMENT_HEALTH_PROBES_ENABLED: true
